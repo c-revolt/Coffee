@@ -18,6 +18,8 @@
 		D0812C5A27E20D24006E3F2A /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */; };
 		D0812C5C27E20FC6006E3F2A /* Color Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */; };
 		D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5D27E21827006E3F2A /* Label Extantion.swift */; };
+		D0CF0DF827E2677B00518534 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF727E2677B00518534 /* ButtonFormView.swift */; };
+		D0CF0DFA27E2748200518534 /* PairOfButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extantion.swift"; sourceTree = "<group>"; };
 		D0812C5D27E21827006E3F2A /* Label Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label Extantion.swift"; sourceTree = "<group>"; };
+		D0CF0DF727E2677B00518534 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairOfButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,18 @@
 				D0812C5D27E21827006E3F2A /* Label Extantion.swift */,
 				D05CBDFA27E20700009D62F9 /* Font Extantion.swift */,
 				D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */,
+				D0CF0DF627E2676200518534 /* Utils */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D0CF0DF627E2676200518534 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0CF0DF727E2677B00518534 /* ButtonFormView.swift */,
+				D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +186,9 @@
 			files = (
 				D05CBDFB27E20700009D62F9 /* Font Extantion.swift in Sources */,
 				D05CBDF927E2045B009D62F9 /* Button Extantion.swift in Sources */,
+				D0CF0DF827E2677B00518534 /* ButtonFormView.swift in Sources */,
 				D05CBDE927E1DA02009D62F9 /* WelcomeController.swift in Sources */,
+				D0CF0DFA27E2748200518534 /* PairOfButtonsView.swift in Sources */,
 				D0812C5C27E20FC6006E3F2A /* Color Extantion.swift in Sources */,
 				D05CBDE527E1DA02009D62F9 /* AppDelegate.swift in Sources */,
 				D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */,

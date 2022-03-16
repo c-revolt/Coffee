@@ -13,7 +13,7 @@ extension UIButton {
                      titleColor: UIColor,
                      font: UIFont?,
                      backgroundColor: UIColor,
-                     cornerRadius: CGFloat = 5) {
+                     cornerRadius: CGFloat = 24.5) {
         self.init(type: .system)
         
         self.setTitle(title, for: .normal)
