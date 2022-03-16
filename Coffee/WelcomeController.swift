@@ -34,16 +34,16 @@ class WelcomeController: UIViewController {
         let homeButtons = PairOfButtonsView(firstButton: registerButton,
                                           secondButton: loginButton)
         
-        let stackView = UIStackView(arrangedSubviews: [homeButtons])
+        let stackView = UIStackView(arrangedSubviews: [homeButtons],
+                                    axis: .vertical, spacing: 40)
         
         view.addSubview(stackView)
+        
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 100
         
         NSLayoutConstraint.activate([
         
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 600),
+            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 690),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 18),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -18),
             

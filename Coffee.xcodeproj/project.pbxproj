@@ -20,6 +20,7 @@
 		D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5D27E21827006E3F2A /* Label Extantion.swift */; };
 		D0CF0DF827E2677B00518534 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF727E2677B00518534 /* ButtonFormView.swift */; };
 		D0CF0DFA27E2748200518534 /* PairOfButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */; };
+		D0CF0DFC27E27F1100518534 /* StackVIew Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D0812C5D27E21827006E3F2A /* Label Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label Extantion.swift"; sourceTree = "<group>"; };
 		D0CF0DF727E2677B00518534 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairOfButtonsView.swift; sourceTree = "<group>"; };
+		D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackVIew Extantion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				D0812C5D27E21827006E3F2A /* Label Extantion.swift */,
 				D05CBDFA27E20700009D62F9 /* Font Extantion.swift */,
 				D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */,
+				D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */,
 				D0CF0DF627E2676200518534 /* Utils */,
 			);
 			path = Extentions;
@@ -193,6 +196,7 @@
 				D05CBDE527E1DA02009D62F9 /* AppDelegate.swift in Sources */,
 				D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */,
 				D05CBDE727E1DA02009D62F9 /* SceneDelegate.swift in Sources */,
+				D0CF0DFC27E27F1100518534 /* StackVIew Extantion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

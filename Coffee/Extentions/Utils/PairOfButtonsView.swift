@@ -30,7 +30,7 @@ class PairOfButtonsView: UIView {
         
         NSLayoutConstraint.activate([
         
-            secondButton.topAnchor.constraint(equalTo: firstButton.bottomAnchor, constant: 7.51),
+            secondButton.topAnchor.constraint(equalTo: firstButton.bottomAnchor, constant: 30.51),
             secondButton.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             secondButton.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             secondButton.heightAnchor.constraint(equalToConstant: 47)
