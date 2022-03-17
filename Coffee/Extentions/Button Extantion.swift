@@ -10,9 +10,9 @@ import UIKit
 extension UIButton {
     
     convenience init(title: String,
-                     titleColor: UIColor,
+                     titleColor: UIColor = .titleButtonColor(),
                      font: UIFont? = .sfProDisplay18(),
-                     backgroundColor: UIColor,
+                     backgroundColor: UIColor = .buttonCoffeeColor(),
                      cornerRadius: CGFloat = 24.5) {
         self.init(type: .system)
         

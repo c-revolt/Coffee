@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D010F49827E3519F00AD93FF /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D010F49727E3519F00AD93FF /* RegistrationController.swift */; };
+		D010F49C27E3625C00AD93FF /* TextField Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D010F49B27E3625C00AD93FF /* TextField Extention.swift */; };
 		D05CBDE527E1DA02009D62F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CBDE427E1DA02009D62F9 /* AppDelegate.swift */; };
 		D05CBDE727E1DA02009D62F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CBDE627E1DA02009D62F9 /* SceneDelegate.swift */; };
 		D05CBDE927E1DA02009D62F9 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CBDE827E1DA02009D62F9 /* WelcomeController.swift */; };
@@ -18,12 +20,14 @@
 		D0812C5A27E20D24006E3F2A /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */; };
 		D0812C5C27E20FC6006E3F2A /* Color Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */; };
 		D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5D27E21827006E3F2A /* Label Extantion.swift */; };
-		D0CF0DF827E2677B00518534 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF727E2677B00518534 /* ButtonFormView.swift */; };
-		D0CF0DFA27E2748200518534 /* PairOfButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */; };
+		D0CF0DF827E2677B00518534 /* LabelAndTextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */; };
+		D0CF0DFA27E2748200518534 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF927E2748100518534 /* ButtonFormView.swift */; };
 		D0CF0DFC27E27F1100518534 /* StackVIew Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D010F49727E3519F00AD93FF /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		D010F49B27E3625C00AD93FF /* TextField Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField Extention.swift"; sourceTree = "<group>"; };
 		D05CBDE127E1DA02009D62F9 /* Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05CBDE427E1DA02009D62F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05CBDE627E1DA02009D62F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,8 +41,8 @@
 		D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extantion.swift"; sourceTree = "<group>"; };
 		D0812C5D27E21827006E3F2A /* Label Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label Extantion.swift"; sourceTree = "<group>"; };
-		D0CF0DF727E2677B00518534 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
-		D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairOfButtonsView.swift; sourceTree = "<group>"; };
+		D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndTextFieldFormView.swift; sourceTree = "<group>"; };
+		D0CF0DF927E2748100518534 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackVIew Extantion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 				D05CBDE427E1DA02009D62F9 /* AppDelegate.swift */,
 				D05CBDE627E1DA02009D62F9 /* SceneDelegate.swift */,
 				D05CBDE827E1DA02009D62F9 /* WelcomeController.swift */,
+				D010F49727E3519F00AD93FF /* RegistrationController.swift */,
 				D0812C5F27E218C8006E3F2A /* Extentions */,
 				D05CBDED27E1DA05009D62F9 /* Assets.xcassets */,
 				D05CBDEF27E1DA05009D62F9 /* LaunchScreen.storyboard */,
@@ -101,6 +106,7 @@
 				D05CBDFA27E20700009D62F9 /* Font Extantion.swift */,
 				D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */,
 				D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */,
+				D010F49B27E3625C00AD93FF /* TextField Extention.swift */,
 				D0CF0DF627E2676200518534 /* Utils */,
 			);
 			path = Extentions;
@@ -109,8 +115,8 @@
 		D0CF0DF627E2676200518534 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D0CF0DF727E2677B00518534 /* ButtonFormView.swift */,
-				D0CF0DF927E2748100518534 /* PairOfButtonsView.swift */,
+				D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */,
+				D0CF0DF927E2748100518534 /* ButtonFormView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -187,12 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D010F49C27E3625C00AD93FF /* TextField Extention.swift in Sources */,
 				D05CBDFB27E20700009D62F9 /* Font Extantion.swift in Sources */,
 				D05CBDF927E2045B009D62F9 /* Button Extantion.swift in Sources */,
-				D0CF0DF827E2677B00518534 /* ButtonFormView.swift in Sources */,
+				D0CF0DF827E2677B00518534 /* LabelAndTextFieldFormView.swift in Sources */,
 				D05CBDE927E1DA02009D62F9 /* WelcomeController.swift in Sources */,
-				D0CF0DFA27E2748200518534 /* PairOfButtonsView.swift in Sources */,
+				D0CF0DFA27E2748200518534 /* ButtonFormView.swift in Sources */,
 				D0812C5C27E20FC6006E3F2A /* Color Extantion.swift in Sources */,
+				D010F49827E3519F00AD93FF /* RegistrationController.swift in Sources */,
 				D05CBDE527E1DA02009D62F9 /* AppDelegate.swift in Sources */,
 				D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */,
 				D05CBDE727E1DA02009D62F9 /* SceneDelegate.swift in Sources */,

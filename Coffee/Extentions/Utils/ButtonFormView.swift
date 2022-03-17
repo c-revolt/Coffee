@@ -9,39 +9,36 @@ import UIKit
 
 class ButtonFormView: UIView {
     
-    init(label: UILabel, button: UIButton) {
+    init(firstButton: UIButton, secondButton: UIButton) {
         super.init(frame: .zero)
         
         self.translatesAutoresizingMaskIntoConstraints = false
-        label.translatesAutoresizingMaskIntoConstraints = false
-        button.translatesAutoresizingMaskIntoConstraints = false
+        firstButton.translatesAutoresizingMaskIntoConstraints = false
+        secondButton.translatesAutoresizingMaskIntoConstraints = false
         
-        self.addSubview(label)
-        self.addSubview(button)
+        self.addSubview(firstButton)
+        self.addSubview(secondButton)
         
         NSLayoutConstraint.activate([
             
-            label.topAnchor.constraint(equalTo: self.topAnchor),
-            label.leadingAnchor.constraint(equalTo: self.leadingAnchor)
+            firstButton.topAnchor.constraint(equalTo: self.topAnchor),
+            firstButton.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            firstButton.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            firstButton.heightAnchor.constraint(equalToConstant: 47)
             
         ])
         
         NSLayoutConstraint.activate([
         
-            button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 7.51),
-            button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            button.heightAnchor.constraint(equalToConstant: 47)
+            secondButton.topAnchor.constraint(equalTo: firstButton.bottomAnchor, constant: 30.51),
+            secondButton.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            secondButton.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            secondButton.heightAnchor.constraint(equalToConstant: 47)
             
         ])
-        
-        bottomAnchor.constraint(equalTo: button.bottomAnchor).isActive = true
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-

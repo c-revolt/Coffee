@@ -10,10 +10,13 @@ import UIKit
 extension UIFont {
     
     static func sfProDisplay18() -> UIFont? {
-        return UIFont(name: "SF Pro Display Bold", size: 31)
+        return UIFont(name: "sf pro display bold", size: 31)
     }
     
     static func sfProDisplay15() -> UIFont? {
         return UIFont(name: "SF Pro Display Regular", size: 18)
     }
 }
+
+// Helvetica Neue
+// SF Pro Display Bold

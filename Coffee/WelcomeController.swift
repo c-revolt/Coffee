@@ -11,13 +11,8 @@ class WelcomeController: UIViewController {
     
     
     // properties
-    let registerButton = UIButton(title: "Регистрация",
-                                  titleColor: .titleButtonColor(),
-                                  backgroundColor: .buttonCoffeeColor())
-    
-    let loginButton = UIButton(title: "Вход",
-                               titleColor: .titleButtonColor(),
-                               backgroundColor: .buttonCoffeeColor())
+    let registerButton = UIButton(title: "Регистрация")
+    let loginButton = UIButton(title: "Вход")
     
 
     override func viewDidLoad() {
@@ -26,12 +21,24 @@ class WelcomeController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         settingsNavController()
+        settingsNavController()
         
     }
     
+    private func settingsNavController() {
+        navigationItem.title = "Добро пожаловать!"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
+        navigationController?.navigationBar.barTintColor = .navControllerColor()
+                
+    }
+
+}
+
+// MARK: - Setup Constaints
+extension WelcomeController {
     private func setupConstraints() {
         
-        let homeButtons = PairOfButtonsView(firstButton: registerButton,
+        let homeButtons = ButtonFormView(firstButton: registerButton,
                                           secondButton: loginButton)
         
         let stackView = UIStackView(arrangedSubviews: [homeButtons],
@@ -51,16 +58,7 @@ class WelcomeController: UIViewController {
         
     }
     
-    private func settingsNavController() {
-        navigationItem.title = "Добро пожаловать!"
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
-        navigationController?.navigationBar.barTintColor = .navControllerColor()
-                
-    }
-    
-
 }
-
 
 // MARK: - SwiftUI
 
