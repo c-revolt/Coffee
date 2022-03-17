@@ -25,8 +25,8 @@ extension UIColor {
         
     }
     
-    static func mainBackgroundColor() -> UIColor {
-        return #colorLiteral(red: 0.8980392157, green: 0.8980392157, blue: 0.8980392157, alpha: 1)
+    static func navControllerColor() -> UIColor {
+        return #colorLiteral(red: 0.9803921569, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
     }
-
+    
 }

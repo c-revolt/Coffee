@@ -11,7 +11,7 @@ extension UIButton {
     
     convenience init(title: String,
                      titleColor: UIColor,
-                     font: UIFont?,
+                     font: UIFont? = .sfProDisplay18(),
                      backgroundColor: UIColor,
                      cornerRadius: CGFloat = 24.5) {
         self.init(type: .system)

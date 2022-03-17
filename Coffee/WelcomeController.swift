@@ -13,20 +13,20 @@ class WelcomeController: UIViewController {
     // properties
     let registerButton = UIButton(title: "Регистрация",
                                   titleColor: .titleButtonColor(),
-                                  font: .sfProDisplay18(),
                                   backgroundColor: .buttonCoffeeColor())
     
     let loginButton = UIButton(title: "Вход",
                                titleColor: .titleButtonColor(),
-                               font: .sfProDisplay18(),
                                backgroundColor: .buttonCoffeeColor())
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .mainBackgroundColor()
+        view.backgroundColor = .white
         setupConstraints()
+        settingsNavController()
+        
     }
     
     private func setupConstraints() {
@@ -50,7 +50,14 @@ class WelcomeController: UIViewController {
         ])
         
     }
-
+    
+    private func settingsNavController() {
+        navigationItem.title = "Добро пожаловать!"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
+        navigationController?.navigationBar.barTintColor = .navControllerColor()
+                
+    }
+    
 
 }
 
