@@ -23,6 +23,7 @@
 		D0CF0DF827E2677B00518534 /* LabelAndTextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */; };
 		D0CF0DFA27E2748200518534 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF927E2748100518534 /* ButtonFormView.swift */; };
 		D0CF0DFC27E27F1100518534 /* StackVIew Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */; };
+		D0E3D47B27E471AD005EE946 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3D47A27E471AD005EE946 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D05CBDF227E1DA05009D62F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05CBDF827E2045B009D62F9 /* Button Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Extantion.swift"; sourceTree = "<group>"; };
 		D05CBDFA27E20700009D62F9 /* Font Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Extantion.swift"; sourceTree = "<group>"; };
+		D0688CC627E3B4AD00639429 /* Tasks.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Tasks.md; sourceTree = "<group>"; };
 		D0812C5727E20D12006E3F2A /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extantion.swift"; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndTextFieldFormView.swift; sourceTree = "<group>"; };
 		D0CF0DF927E2748100518534 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		D0CF0DFB27E27F1100518534 /* StackVIew Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackVIew Extantion.swift"; sourceTree = "<group>"; };
+		D0E3D47A27E471AD005EE946 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		D05CBDD827E1DA02009D62F9 = {
 			isa = PBXGroup;
 			children = (
+				D0688CC627E3B4AD00639429 /* Tasks.md */,
 				D05CBDE327E1DA02009D62F9 /* Coffee */,
 				D05CBDE227E1DA02009D62F9 /* Products */,
 			);
@@ -80,6 +84,7 @@
 				D05CBDE627E1DA02009D62F9 /* SceneDelegate.swift */,
 				D05CBDE827E1DA02009D62F9 /* WelcomeController.swift */,
 				D010F49727E3519F00AD93FF /* RegistrationController.swift */,
+				D0E3D47A27E471AD005EE946 /* LoginController.swift */,
 				D0812C5F27E218C8006E3F2A /* Extentions */,
 				D05CBDED27E1DA05009D62F9 /* Assets.xcassets */,
 				D05CBDEF27E1DA05009D62F9 /* LaunchScreen.storyboard */,
@@ -194,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D010F49C27E3625C00AD93FF /* TextField Extention.swift in Sources */,
+				D0E3D47B27E471AD005EE946 /* LoginController.swift in Sources */,
 				D05CBDFB27E20700009D62F9 /* Font Extantion.swift in Sources */,
 				D05CBDF927E2045B009D62F9 /* Button Extantion.swift in Sources */,
 				D0CF0DF827E2677B00518534 /* LabelAndTextFieldFormView.swift in Sources */,

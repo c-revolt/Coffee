@@ -11,6 +11,7 @@ extension UITextField {
     
     convenience init(placeholder: String,
                      font: UIFont? = UIFont.sfProDisplay15(),
+                     textColor: UIColor = .placeholderColor(),
                      borderWidth: CGFloat = 1.5,
                      cornerRadius: CGFloat = 24.5) {
         self.init()
@@ -20,4 +21,11 @@ extension UITextField {
         self.layer.borderWidth = borderWidth
         self.layer.cornerRadius = cornerRadius
     }
+    
+    func indent(size:CGFloat) {
+        self.leftView = UIView(frame: CGRect(x: self.frame.minX, y: self.frame.minY, width: size, height: self.frame.height))
+        self.leftViewMode = .always
+    }
 }
+
+

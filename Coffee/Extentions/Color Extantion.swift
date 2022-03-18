@@ -29,4 +29,8 @@ extension UIColor {
         return #colorLiteral(red: 0.9803921569, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
     }
     
+    static func placeholderColor() -> UIColor {
+        return #colorLiteral(red: 0.7425513864, green: 0.6456245184, blue: 0.5475898385, alpha: 1)
+    }
+    
 }

@@ -1,42 +1,37 @@
 //
-//  RegistrationController.swift
+//  LoginController.swift
 //  Coffee
 //
-//  Created by Александр Прайд on 17.03.2022.
+//  Created by Александр Прайд on 18.03.2022.
 //
 
 import UIKit
 
-class RegistrationController: UIViewController {
+class LoginController: UIViewController {
     
     // properties
     
     let emailLabel = UILabel(text: "e-mail")
     let passwordLabel = UILabel(text: "Пароль")
-    let confirmPasswordLabel = UILabel(text: "Повторите пароль")
     
     let emailTextField = UITextField(placeholder: "example@example.ru")
     let passwordTextField = UITextField(placeholder: "******")
-    let confirmPasswordTextField = UITextField(placeholder: "******")
     
-    let registerButton = UIButton(title: "Регистрация")
+    let loginButton = UIButton(title: "Вход")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        
         emailTextField.indent(size: 18.5)
         passwordTextField.indent(size: 18.5)
-        confirmPasswordTextField.indent(size: 18.5)
-        
-        setupConstraints()
         settingsNavController()
-        
+        setupConstraints()
     }
     
     private func settingsNavController() {
-        navigationItem.title = "Регистрация"
+        navigationItem.title = "Вход"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
         navigationController?.navigationBar.barTintColor = .navControllerColor()
                 
@@ -44,22 +39,21 @@ class RegistrationController: UIViewController {
 }
 
 // MARK: - Setup Constraints
-extension RegistrationController {
+extension LoginController {
     private func setupConstraints() {
         
         let emailForm = LabelAndTextFieldFormView(label: emailLabel, textField: emailTextField)
         let passwordForm = LabelAndTextFieldFormView(label: passwordLabel, textField: passwordTextField)
-        let confirmPasswordForm = LabelAndTextFieldFormView(label: confirmPasswordLabel, textField: confirmPasswordTextField)
         
-        registerButton.heightAnchor.constraint(equalToConstant: 47).isActive = true
+        loginButton.heightAnchor.constraint(equalToConstant: 47).isActive = true
 
         
         
-        let stackView = UIStackView(arrangedSubviews: [emailForm, passwordForm, confirmPasswordForm],
+        let stackView = UIStackView(arrangedSubviews: [emailForm, passwordForm],
                                     axis: .vertical,
                                     spacing: 24.49)
         
-        let buttonStackView = UIStackView(arrangedSubviews: [registerButton], axis: .vertical, spacing: 0)
+        let buttonStackView = UIStackView(arrangedSubviews: [loginButton], axis: .vertical, spacing: 0)
         
         view.addSubview(stackView)
         view.addSubview(buttonStackView)
@@ -83,4 +77,5 @@ extension RegistrationController {
         ])
         
     }
+
 }
