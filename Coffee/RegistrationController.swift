@@ -15,9 +15,9 @@ class RegistrationController: UIViewController {
     let passwordLabel = UILabel(text: "Пароль")
     let confirmPasswordLabel = UILabel(text: "Повторите пароль")
     
-    let emailTextField = UITextField(placeholder: "example@example.ru")
-    let passwordTextField = UITextField(placeholder: "******")
-    let confirmPasswordTextField = UITextField(placeholder: "******")
+    let emailTextField = UITextField(placeholder: "example@example.ru", isSecureTextEntry: false)
+    let passwordTextField = UITextField(placeholder: "******", isSecureTextEntry: true)
+    let confirmPasswordTextField = UITextField(placeholder: "******", isSecureTextEntry: true)
     
     let registerButton = UIButton(title: "Регистрация")
     

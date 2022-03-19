@@ -36,6 +36,8 @@ class ButtonFormView: UIView {
             secondButton.heightAnchor.constraint(equalToConstant: 47)
             
         ])
+        
+        bottomAnchor.constraint(equalTo: secondButton.bottomAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

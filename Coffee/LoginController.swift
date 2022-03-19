@@ -14,8 +14,8 @@ class LoginController: UIViewController {
     let emailLabel = UILabel(text: "e-mail")
     let passwordLabel = UILabel(text: "Пароль")
     
-    let emailTextField = UITextField(placeholder: "example@example.ru")
-    let passwordTextField = UITextField(placeholder: "******")
+    let emailTextField = UITextField(placeholder: "example@example.ru", isSecureTextEntry: false)
+    let passwordTextField = UITextField(placeholder: "******", isSecureTextEntry: true)
     
     let loginButton = UIButton(title: "Вход")
     
@@ -24,10 +24,14 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        
         emailTextField.indent(size: 18.5)
         passwordTextField.indent(size: 18.5)
+        
         settingsNavController()
         setupConstraints()
+        
+        goToRegisterationController()
     }
     
     private func settingsNavController() {
@@ -77,5 +81,20 @@ extension LoginController {
         ])
         
     }
+    
+    
+    private func goToRegisterationController() {
+        let goToRegButton = loginButton
+        goToRegButton.addTarget(goToRegButton, action: #selector(goToRegister), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func goToRegister() {
+        let registrationController = RegistrationController()
+        navigationController?.pushViewController(registrationController, animated: true)
+    }
+
 
 }
+
+
+

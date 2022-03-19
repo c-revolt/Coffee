@@ -14,6 +14,7 @@ class WelcomeController: UIViewController {
     let registerButton = UIButton(title: "Регистрация")
     let loginButton = UIButton(title: "Вход")
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,9 @@ class WelcomeController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         settingsNavController()
-        settingsNavController()
+        
+        registerButton.addTarget(self, action: #selector(goToRegister), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
         
     }
     
@@ -42,7 +45,7 @@ extension WelcomeController {
                                           secondButton: loginButton)
         
         let stackView = UIStackView(arrangedSubviews: [homeButtons],
-                                    axis: .vertical, spacing: 40)
+                                    axis: .vertical, spacing: 0)
         
         view.addSubview(stackView)
         
@@ -58,5 +61,18 @@ extension WelcomeController {
         
     }
     
+    // MARK: - Handlers
+    
+    @objc fileprivate func goToRegister() {
+        let registrationController = RegistrationController()
+        navigationController?.pushViewController(registrationController, animated: true)
+    }
+    
+    @objc fileprivate func goToLogin() {
+        let loginController = LoginController()
+        navigationController?.pushViewController(loginController, animated: true)
+    }
+    
 }
+
 
