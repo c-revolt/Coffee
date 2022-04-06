@@ -20,6 +20,8 @@ class LoginController: UIViewController {
     let loginButton = UIButton(title: "Вход")
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +33,6 @@ class LoginController: UIViewController {
         settingsNavController()
         setupConstraints()
         
-        goToRegisterationController()
     }
     
     private func settingsNavController() {
@@ -40,6 +41,7 @@ class LoginController: UIViewController {
         navigationController?.navigationBar.barTintColor = .navControllerColor()
                 
     }
+    
 }
 
 // MARK: - Setup Constraints
@@ -50,8 +52,6 @@ extension LoginController {
         let passwordForm = LabelAndTextFieldFormView(label: passwordLabel, textField: passwordTextField)
         
         loginButton.heightAnchor.constraint(equalToConstant: 47).isActive = true
-
-        
         
         let stackView = UIStackView(arrangedSubviews: [emailForm, passwordForm],
                                     axis: .vertical,
@@ -81,18 +81,6 @@ extension LoginController {
         ])
         
     }
-    
-    
-    private func goToRegisterationController() {
-        let goToRegButton = loginButton
-        goToRegButton.addTarget(goToRegButton, action: #selector(goToRegister), for: .touchUpInside)
-    }
-    
-    @objc fileprivate func goToRegister() {
-        let registrationController = RegistrationController()
-        navigationController?.pushViewController(registrationController, animated: true)
-    }
-
 
 }
 

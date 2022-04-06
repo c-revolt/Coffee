@@ -32,6 +32,8 @@ class WelcomeController: UIViewController {
         navigationItem.title = "Добро пожаловать!"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
         navigationController?.navigationBar.barTintColor = .navControllerColor()
+        navigationItem.backButtonTitle = "Назад"
+        navigationController?.navigationBar.topItem?.backBarButtonItem?.tintColor = .black
                 
     }
 

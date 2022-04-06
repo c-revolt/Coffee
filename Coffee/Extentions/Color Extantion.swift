@@ -33,4 +33,8 @@ extension UIColor {
         return #colorLiteral(red: 0.7425513864, green: 0.6456245184, blue: 0.5475898385, alpha: 1)
     }
     
+    static func cellColor() -> UIColor {
+        return #colorLiteral(red: 0.9731794, green: 0.9173260927, blue: 0.8534517288, alpha: 1)
+    }
+    
 }

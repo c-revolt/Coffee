@@ -1,25 +1,15 @@
 //
-//  Label Extantion.swift
+//  VIew Extention.swift
 //  Coffee
 //
-//  Created by Александр Прайд on 16.03.2022.
+//  Created by Александр Прайд on 04.04.2022.
 //
 
 import UIKit
 
-extension UILabel {
-
-    convenience init(text: String,
-                     textColor: UIColor = .labelTextColor(),
-                     font: UIFont? = .sfProDisplay15()) {
-        self.init()
-        
-        self.text = text
-        self.textColor = textColor
-        self.font = font
-    }
+extension UIView {
     
-    func ancorConstruct(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailling: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
+    func ancor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailling: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
         
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -50,5 +40,5 @@ extension UILabel {
         }
         
     }
-    
 }
+
