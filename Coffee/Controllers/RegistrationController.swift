@@ -33,6 +33,8 @@ class RegistrationController: UIViewController {
         setupConstraints()
         settingsNavController()
         
+        registerButton.addTarget(self, action: #selector(goToCoffeeShops), for: .touchUpInside)
+        
     }
     
     private func settingsNavController() {
@@ -82,5 +84,17 @@ extension RegistrationController {
         
         ])
         
+    }
+    
+    // MARK: - Handlers
+    
+    @objc fileprivate func goToCoffeeShops() {
+        let coffeeShopsViewController = CoffeeShopsViewController()
+        navigationController?.pushViewController(coffeeShopsViewController, animated: true)
+        
+        let backItem = UIBarButtonItem()
+        backItem.title =  ""
+        navigationItem.backBarButtonItem = backItem
+        navigationItem.backBarButtonItem?.tintColor = .labelTextColor()
     }
 }

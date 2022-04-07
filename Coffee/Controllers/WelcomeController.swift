@@ -15,27 +15,30 @@ class WelcomeController: UIViewController {
     let loginButton = UIButton(title: "Вход")
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        navigationController?.isNavigationBarHidden = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        
         setupConstraints()
-        settingsNavController()
         
         registerButton.addTarget(self, action: #selector(goToRegister), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
         
     }
-    
-    private func settingsNavController() {
-        navigationItem.title = "Добро пожаловать!"
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
-        navigationController?.navigationBar.barTintColor = .navControllerColor()
-        navigationItem.backButtonTitle = "Назад"
-        navigationController?.navigationBar.topItem?.backBarButtonItem?.tintColor = .black
-                
-    }
+        
 
 }
 
@@ -68,6 +71,12 @@ extension WelcomeController {
     @objc fileprivate func goToRegister() {
         let registrationController = RegistrationController()
         navigationController?.pushViewController(registrationController, animated: true)
+        
+        let backItem = UIBarButtonItem()
+        backItem.title =  ""
+        navigationItem.backBarButtonItem = backItem
+        navigationItem.backBarButtonItem?.tintColor = .labelTextColor()
+        
     }
     
     @objc fileprivate func goToLogin() {

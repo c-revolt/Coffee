@@ -8,15 +8,29 @@
 import UIKit
 
 class CoffeeShopsViewController: UITableViewController {
+    
+    
+    let futterView = UIView()
 
+
+    let coffeShopsData = [CoffeeShopsModel(shopTitle: "BEDOEV COFFEE", distance: "1 км от вас"),
+                           CoffeeShopsModel(shopTitle: "Coffee Like", distance: "2 км от вас"),
+                           CoffeeShopsModel(shopTitle: "EM&DI Coffee and Snacks", distance: "1 км от вас"),
+                           CoffeeShopsModel(shopTitle: "Коффе есть", distance: "300 м от вас"),
+                           CoffeeShopsModel(shopTitle: "BEDOEV COFFEE 2", distance: "3 км от вас")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.backgroundColor = .white
+        tableView.separatorColor = .clear
         tableView.register(CoffeeShopCell.self, forCellReuseIdentifier: K.coffeeShopsIDCell)
         
+        tableView.addSubview(futterView)
+        
+        
         settingsNavController()
+        setupView()
         
     }
     
@@ -32,13 +46,15 @@ class CoffeeShopsViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return coffeShopsData.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.coffeeShopsIDCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.coffeeShopsIDCell, for: indexPath) as! CoffeeShopCell
         
+        cell.shopNameLabel.text = coffeShopsData[indexPath.row].shopTitle
+        cell.distanceLabel.text = coffeShopsData[indexPath.row].distance
 
         return cell
     }
@@ -48,40 +64,16 @@ class CoffeeShopsViewController: UITableViewController {
     }
 
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func setupView() {
+        
+        futterView.ancor(top: nil,
+                         leading: tableView.leadingAnchor,
+                         bottom: tableView.bottomAnchor,
+                         trailling: tableView.trailingAnchor)
+        
+        futterView.backgroundColor = .red
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation
