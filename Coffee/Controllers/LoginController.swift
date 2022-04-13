@@ -88,7 +88,7 @@ extension LoginController {
     // MARK: - Handlers
     
     @objc fileprivate func goToCoffeeShops() {
-        let coffeeShopsViewController = CoffeeShopsViewController()
+        let coffeeShopsViewController = ListViewController()
         navigationController?.pushViewController(coffeeShopsViewController, animated: true)
         
         let backItem = UIBarButtonItem()

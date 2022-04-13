@@ -18,11 +18,11 @@
 		D05CBDF127E1DA05009D62F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05CBDEF27E1DA05009D62F9 /* LaunchScreen.storyboard */; };
 		D05CBDF927E2045B009D62F9 /* Button Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CBDF827E2045B009D62F9 /* Button Extantion.swift */; };
 		D05CBDFB27E20700009D62F9 /* Font Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CBDFA27E20700009D62F9 /* Font Extantion.swift */; };
-		D07D628E27F0F0A400BC6FA9 /* CoffeeShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D628D27F0F0A400BC6FA9 /* CoffeeShopsViewController.swift */; };
 		D0812C5827E20D12006E3F2A /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0812C5727E20D12006E3F2A /* SF-Pro-Display-Regular.otf */; };
 		D0812C5A27E20D24006E3F2A /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */; };
 		D0812C5C27E20FC6006E3F2A /* Color Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */; };
 		D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0812C5D27E21827006E3F2A /* Label Extantion.swift */; };
+		D0AF311928073A0E001D7994 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AF311828073A0E001D7994 /* ListViewController.swift */; };
 		D0BD92AA27F185CA00005529 /* CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BD92A927F185CA00005529 /* CoffeeShopCell.swift */; };
 		D0CF0DF827E2677B00518534 /* LabelAndTextFieldFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */; };
 		D0CF0DFA27E2748200518534 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CF0DF927E2748100518534 /* ButtonFormView.swift */; };
@@ -48,11 +48,11 @@
 		D05CBDF827E2045B009D62F9 /* Button Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Extantion.swift"; sourceTree = "<group>"; };
 		D05CBDFA27E20700009D62F9 /* Font Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font Extantion.swift"; sourceTree = "<group>"; };
 		D0688CC627E3B4AD00639429 /* Tasks.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Tasks.md; sourceTree = "<group>"; };
-		D07D628D27F0F0A400BC6FA9 /* CoffeeShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsViewController.swift; sourceTree = "<group>"; };
 		D0812C5727E20D12006E3F2A /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		D0812C5927E20D23006E3F2A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		D0812C5B27E20FC6006E3F2A /* Color Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extantion.swift"; sourceTree = "<group>"; };
 		D0812C5D27E21827006E3F2A /* Label Extantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label Extantion.swift"; sourceTree = "<group>"; };
+		D0AF311828073A0E001D7994 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D0BD92A927F185CA00005529 /* CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCell.swift; sourceTree = "<group>"; };
 		D0CF0DF727E2677B00518534 /* LabelAndTextFieldFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAndTextFieldFormView.swift; sourceTree = "<group>"; };
 		D0CF0DF927E2748100518534 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				D05CBDE827E1DA02009D62F9 /* WelcomeController.swift */,
 				D010F49727E3519F00AD93FF /* RegistrationController.swift */,
 				D0E3D47A27E471AD005EE946 /* LoginController.swift */,
-				D07D628D27F0F0A400BC6FA9 /* CoffeeShopsViewController.swift */,
+				D0AF311828073A0E001D7994 /* ListViewController.swift */,
 				D02D79BB27EBA60500E3E454 /* Cell */,
 			);
 			path = Controllers;
@@ -255,9 +255,9 @@
 				D0CF0DFA27E2748200518534 /* ButtonFormView.swift in Sources */,
 				D0812C5C27E20FC6006E3F2A /* Color Extantion.swift in Sources */,
 				D010F49827E3519F00AD93FF /* RegistrationController.swift in Sources */,
+				D0AF311928073A0E001D7994 /* ListViewController.swift in Sources */,
 				D05CBDE527E1DA02009D62F9 /* AppDelegate.swift in Sources */,
 				D0DDDE9627F02ACF00D570AA /* CoffeeShopsModel.swift in Sources */,
-				D07D628E27F0F0A400BC6FA9 /* CoffeeShopsViewController.swift in Sources */,
 				D0812C5E27E21827006E3F2A /* Label Extantion.swift in Sources */,
 				D02130B527EE2BAF00C974C8 /* CellFormView.swift in Sources */,
 				D0BD92AA27F185CA00005529 /* CoffeeShopCell.swift in Sources */,
