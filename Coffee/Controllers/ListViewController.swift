@@ -12,9 +12,8 @@ class ListViewController: UIViewController {
     let footerView = UIView()
     let onTheMapButton = UIButton(title: "На карте")
     let tableView = UITableView()
-
     
-    let coffeShopsData = [CoffeeShopsModel(shopTitle: "BEDOEV COFFEE", distance: "1 км от вас"),
+    let staticData = [CoffeeShopsModel(shopTitle: "BEDOEV COFFEE", distance: "1 км от вас"),
                            CoffeeShopsModel(shopTitle: "Coffee Like", distance: "2 км от вас"),
                            CoffeeShopsModel(shopTitle: "EM&DI Coffee and Snacks", distance: "1 км от вас"),
                            CoffeeShopsModel(shopTitle: "Коффе есть", distance: "300 м от вас"),
@@ -32,7 +31,7 @@ class ListViewController: UIViewController {
     }
     
     private func settingsNavController() {
-        navigationItem.title = "Ближайшие Кофейни"
+        navigationItem.title = K.titlesForNavigationControllers.nearestShops
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
         navigationController?.navigationBar.barTintColor = .navControllerColor()
 
@@ -62,7 +61,7 @@ class ListViewController: UIViewController {
             onTheMapButton.topAnchor.constraint(equalTo: footerView.topAnchor, constant: 20),
             onTheMapButton.leadingAnchor.constraint(equalTo: footerView.leadingAnchor, constant: 19),
             onTheMapButton.trailingAnchor.constraint(equalTo: footerView.trailingAnchor, constant:  -18),
-            onTheMapButton.heightAnchor.constraint(equalToConstant: 47),
+            onTheMapButton.heightAnchor.constraint(equalToConstant: 47)
         
         ])
         
@@ -75,7 +74,7 @@ class ListViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = 100
         tableView.separatorColor = .clear
-        tableView.register(CoffeeShopCell.self, forCellReuseIdentifier: K.coffeeShopsIDCell)
+        tableView.register(ListCell.self, forCellReuseIdentifier: K.coffeeShopsIDCell)
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -105,13 +104,13 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coffeShopsData.count
+        return staticData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.coffeeShopsIDCell, for: indexPath) as! CoffeeShopCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.coffeeShopsIDCell, for: indexPath) as! ListCell
         
-        cell.shopNameLabel.text = coffeShopsData[indexPath.row].shopTitle
-        cell.distanceLabel.text = coffeShopsData[indexPath.row].distance
+        cell.shopNameLabel.text = staticData[indexPath.row].shopTitle
+        cell.distanceLabel.text = staticData[indexPath.row].distance
         
         
         return cell

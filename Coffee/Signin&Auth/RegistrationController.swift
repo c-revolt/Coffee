@@ -38,7 +38,7 @@ class RegistrationController: UIViewController {
     }
     
     private func settingsNavController() {
-        navigationItem.title = "Регистрация"
+        navigationItem.title = K.titlesForNavigationControllers.registrationTitle
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
         navigationController?.navigationBar.barTintColor = .navControllerColor()
                 

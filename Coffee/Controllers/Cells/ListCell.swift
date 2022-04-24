@@ -7,17 +7,12 @@
 
 import UIKit
 
-class CoffeeShopCell: UITableViewCell {
+class ListCell: UITableViewCell {
     
     let cellView = UIView()
-    
-//    let shopTitle = UILabel(text: "Test name")
-//    let distLabel = UILabel(text: "test distance")
 
     lazy var shopNameLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 10, y: 20, width: 253, height: 21))
-
-        label.text = "ТEST TEST TEST"
         label.textAlignment = .left
         label.textColor = .labelTextColor()
         label.font = UIFont.boldSystemFont(ofSize: 21)
@@ -26,17 +21,12 @@ class CoffeeShopCell: UITableViewCell {
 
     lazy var distanceLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 10, y: 55, width: 140, height: 21))
-        label.text = "2 км от вас"
         label.textAlignment = .left
         label.textColor = .labelTextColor()
         label.font = UIFont.systemFont(ofSize: 18)
         return label
     }()
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
     
     override func layoutSubviews() {
         

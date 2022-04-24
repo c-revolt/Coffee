@@ -39,7 +39,7 @@ class LoginController: UIViewController {
     }
     
     private func settingsNavController() {
-        navigationItem.title = "Вход"
+        navigationItem.title = K.titlesForNavigationControllers.loginTitle
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.labelTextColor()]
         navigationController?.navigationBar.barTintColor = .navControllerColor()
                 

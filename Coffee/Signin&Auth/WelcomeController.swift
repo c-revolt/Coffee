@@ -73,7 +73,7 @@ extension WelcomeController {
         navigationController?.pushViewController(registrationController, animated: true)
         
         let backItem = UIBarButtonItem()
-        backItem.title =  ""
+        backItem.title = ""
         navigationItem.backBarButtonItem = backItem
         navigationItem.backBarButtonItem?.tintColor = .labelTextColor()
         
